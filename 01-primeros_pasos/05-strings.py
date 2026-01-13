@@ -13,7 +13,7 @@ Soy de Venezuela
 name = 'Víctor'
 last_name = 'Quinones'
 
-full_name = name + " " + last_name
+full_name = name + " " + last_name # -> eso no esta bien, no es una buena práctica. 
 
 
 print(full_name)  # Víctor Quinones

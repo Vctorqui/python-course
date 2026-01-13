@@ -19,6 +19,6 @@ print(name[0:3:2]) # Vc
 # Cómo puedo poner mi nombre al revés?
 name_girl = 'Samar'
 
+# [Start:Stop: stepover] -> Si coloco dos puntos '::' le estoy diciendo al interprete que quiero toda la cadena. El stepover '-1' indica que quiero que vaya de atrás hacia adelante.
 name_reverse_girl = name_girl[::-1]
-
 print(name_reverse_girl)
