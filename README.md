@@ -12,6 +12,8 @@ A continuación se listan los módulos disponibles en este curso. Haz clic en ca
   - Variables y Tipos de Datos
   - Manipulación de Strings
   - Inmutabilidad
+  - Conversiones de Tipos de Datos (Casting)
+  - Operaciones Matemáticas y Funciones
 
 ---
 *Este repositorio sirve como guía de estudio y referencia.*

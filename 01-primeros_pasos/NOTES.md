@@ -93,13 +93,27 @@ print(message)
 ```
 
 **Índices y Slicing:**
-Podemos acceder a caracteres específicos o rangos.
+Podemos acceder a caracteres específicos o rangos (slices) de una cadena.
+La sintaxis general es `[start:stop:stepover]`.
+
+- `start`: Índice donde comienza (incluido). Si se omite, es 0.
+- `stop`: Índice donde termina (NO incluido). Si se omite, va hasta el final.
+- `stepover`: Saltos entre caracteres. Si se omite, es 1.
+
 ```python
 name = "Victor"
 print(name[0])      # 'V' (Primer caracter)
 print(name[-1])     # 'r' (Último caracter)
-print(name[0:3])    # 'Vic' (Desde índice 0 hasta antes del 3)
-print(name[::-1])   # 'rotciV' (String invertido)
+
+# [start:stop] -> El stop no se incluye
+print(name[0:3])    # 'Vic' (Indices 0, 1, 2)
+
+# [start:stop:stepover] -> Salta índices
+print(name[0:3:2])  # 'Vc' (Toma 1, salta 1)
+
+# [::] -> Al omitir start y stop, toma toda la cadena
+# El stepover -1 invierte la cadena (de atrás hacia adelante)
+print(name[::-1])   # 'rotciV'
 ```
 
 ### 6. Inmutabilidad
@@ -110,6 +124,49 @@ name = 'Victor'
 # name[0] = 'S' # Error! No se puede asignar ítems en un string
 
 name = 'Samar'  # Correcto: Estamos creando un nuevo string y reasignando la variable
+```
+
+### 7. Conversiones de Tipos de Datos (Casting)
+Es posible convertir entre diferentes tipos de datos usando funciones como `int()`, `float()`, `str()`.
+
+**Errores comunes:**
+No se pueden operar tipos incompatibles directamente.
+```python
+# value = 26 + 'Hola' # Error: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+**Conversión correcta:**
+```python
+value = 26
+# Convertir entero a string para concatenar
+texto = str(value) + ' Hola' 
+print(texto) # "26 Hola"
+
+# Convertir string a entero
+numero = int('26')
+print(type(numero)) # <class 'int'>
+
+# Convertir string a float
+dec = float('26.5')
+print(type(dec)) # <class 'float'>
+```
+
+### 8. Operaciones Matemáticas y Funciones
+Python soporta todas las operaciones aritméticas básicas y cuenta con funciones integradas para cálculos.
+
+```python
+# Operadores Aritméticos
+print(2 + 2)    # Suma: 4
+print(4 - 2)    # Resta: 2
+print(3 * 3)    # Multiplicación: 9
+print(2 / 4)    # División: 0.5 (Siempre devuelve float)
+print(2 ** 3)   # Potencia: 8
+print(5 // 2)   # División Entera: 2 (Descarta decimales)
+print(5 % 2)    # Módulo: 1 (Resto de la división)
+
+# Funciones Útiles
+print(round(3.6)) # Redondeo: 4
+print(abs(-5))    # Valor Absoluto: 5
 ```
 
 ---
