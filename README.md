@@ -14,6 +14,9 @@ A continuación se listan los módulos disponibles en este curso. Haz clic en ca
   - Inmutabilidad
   - Conversiones de Tipos de Datos (Casting)
   - Operaciones Matemáticas y Funciones
+  - Funciones Incorporadas y Métodos
+  - Entrada de Datos (Input)
+  - Mini Proyecto: Registro
 
 ---
 *Este repositorio sirve como guía de estudio y referencia.*

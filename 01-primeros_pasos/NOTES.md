@@ -169,4 +169,58 @@ print(round(3.6)) # Redondeo: 4
 print(abs(-5))    # Valor Absoluto: 5
 ```
 
+### 9. Funciones Incorporadas y Métodos
+Python incluye muchas funciones "built-in" listas para usar.
+Para ver la lista completa, consulta la [Documentación Oficial de Python](https://docs.python.org/3/library/functions.html).
+
+Ejemplos comunes:
+```python
+print("Hola")       # Imprimir en consola
+type(42)            # Ver tipo de dato
+str(42)             # Convertir a texto
+```
+
+**Métodos de Strings:**
+Los objetos en Python tienen métodos asociados.
+```python
+message = "Es un buen programador"
+print(message.upper()) # Mayúsculas: 'ES UN BUEN PROGRAMADOR'
+print(message.replace("buen", "excelente")) # Reemplazar texto
+```
+
+### 10. Entrada de Datos (Input)
+Podemos interactuar con el usuario usando `input()`.
+**IMPORTANTE**: `input()` siempre devuelve un dato de tipo **string (str)**. Si necesitas un número, debes convertirlo explícitamente.
+
+```python
+name = input('¿Cuál es tu nombre? ') 
+age = input('¿Cuántos años tienes? ')
+
+# Si queremos operar con la edad, debemos convertirla
+age_number = int(age)
+```
+
+### 11. Mini Proyecto: Registro de Usuario
+Hora de practicar😎. Intenta resolver el siguiente ejercicio:
+
+**Enunciado:**
+Crea un script que reciba de forma dinámica (por consola):
+1. Nombre
+2. Año de nacimiento
+3. Correo
+4. Contraseña
+
+y la respuesta se vea de la siguiente manera:
+
+"""
+Nombre: Tu nombre
+Email: Tu correo
+Tendrás n años en 2050
+Tu constraseña es: *****
+"""
+
+El script debe calcular tu edad en el año 2050, encriptar la contraseña (mostrando asteriscos `*` según su longitud) y mostrar un mensaje formateado con todos los datos.
+
+Si tienes dudas o quieres ver la solución, revisa el archivo: `13-mini_project.py`.
+
 ---
