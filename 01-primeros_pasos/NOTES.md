@@ -212,12 +212,14 @@ Crea un script que reciba de forma dinámica (por consola):
 
 y la respuesta se vea de la siguiente manera:
 
+```python
 """
-Nombre: Tu nombre
-Email: Tu correo
-Tendrás n años en 2050
-Tu constraseña es: *****
+    Nombre: Tu nombre
+    Email: Tu correo
+    Tendrás n años en 2050
+    Tu constraseña es: *****
 """
+```
 
 El script debe calcular tu edad en el año 2050, encriptar la contraseña (mostrando asteriscos `*` según su longitud) y mostrar un mensaje formateado con todos los datos.
 
