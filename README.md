@@ -18,5 +18,20 @@ A continuación se listan los módulos disponibles en este curso. Haz clic en ca
   - Entrada de Datos (Input)
   - Mini Proyecto: Registro
 
+- **[Módulo 2: Condicionales](./02-condicionales/NOTES.md)**
+  - Entender qué son las condicionales
+  - Condicional If
+  - Condicional elif
+  - Operador ternario
+  - Truthy vs Falsey
+  - None
+  - Operadores lógicos
+  - Operadores de comparación
+  - Operadores de pertenencia
+  - Is vs ==
+  - Short Circuiting
+  - Control de flujo
+
 ---
-*Este repositorio sirve como guía de estudio y referencia.*
+
+_Este repositorio sirve como guía de estudio y referencia._
